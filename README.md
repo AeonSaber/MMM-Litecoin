@@ -1,5 +1,8 @@
 # MMM-bitcoin
-A `bitcoin ticker` <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a> module.
+
+Bitcoin Ticker turned litecoin ticket. Work in progress.
+
+ <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a> module.
 
 ## Preview
 ![preview](preview.png)

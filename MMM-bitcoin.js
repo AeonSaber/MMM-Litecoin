@@ -23,8 +23,8 @@ Module.register("MMM-bitcoin", {
 
     var data = this.result;
     var symbolElement =  document.createElement("span");
-    var symbol = "Bitstamp";
-    var lastPrice = data.last;
+    var symbol = "Litecoin: ";
+    var lastPrice = data.price;
     if (lastPrice) {
       symbolElement.innerHTML = symbol + ' $';
       wrapper.appendChild(symbolElement);
@@ -48,7 +48,7 @@ Module.register("MMM-bitcoin", {
   },
 
   getTickers: function () {
-    var url = 'https://www.bitstamp.net/api/ticker_hour/';
+    var url = 'https://api.gdax.com/products/LTC-USD/ticker';
     this.sendSocketNotification('GET_TICKERS', url);
   },
 
